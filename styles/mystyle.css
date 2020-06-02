@@ -75,23 +75,23 @@ body{
 }
 
 #alien{
-	width: 300px;
-	height: 406px;
+/*	width: 300px;
+	height: 406px;*/
 	top: 5px;
-	left: 800px;
+	left: 1360px;
 	position: absolute;
 	animation-name: hello;
 	transform-origin: bottom;
 	animation-duration: 5s;
-	animation-delay: 10s;
+	animation-delay: 1s;
 	animation-timing-function: ease-out;
 	animation-iteration-count: 1;
 }
 
 @keyframes hello {
-	0% {top: 5px; left: 790px;}
-	50% {left: 700px; transform: rotate(-40deg);}
-	100% {top: 5px; left: 790px;}
+	0% {top: 5px; left: 1360px;}
+	50% {left: 1250px; transform: rotate(-40deg);}
+	100% {top: 5px; left: 1360px;}
 }
 
 .title{
