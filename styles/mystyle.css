@@ -83,7 +83,7 @@ body{
 	animation-name: hello;
 	transform-origin: bottom;
 	animation-duration: 5s;
-	animation-delay: 1s;
+	animation-delay: 10s;
 	animation-timing-function: ease-out;
 	animation-iteration-count: 1;
 }
