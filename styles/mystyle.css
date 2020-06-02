@@ -1,0 +1,114 @@
+
+body{
+	background-color: #4682B4;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	overflow: hidden;
+	font-family: verdana;
+
+}
+
+.clockTemplate{
+	width: 300px;
+	height: 300px;
+	position: relative;
+}
+
+.clockTemplate .dot{
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.clockTemplate .pointA{
+	background-color: grey;
+	width: 24px;
+	height: 24px;
+	z-index: 11;
+}
+.clockTemplate .pointB{
+	background-color: white;
+	width: 10px;
+	height: 10px;
+	z-index: 12;
+}
+
+.imageContainer{
+	width: 300px;
+	height: 300px;
+}
+
+.clockTemplate .stick{
+	--rotation: 0;
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	border: 1px solid white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	transform-origin: bottom;
+	z-index: 10;
+	transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.clockTemplate .second{
+	width: 3px;
+	height: 45%;
+/*	background-color: red;*/
+}
+#sec{
+	background-color: red;
+}
+.clockTemplate .minute{
+	width: 7px;
+	height: 40%;
+	background-color: black;
+}
+.clockTemplate .hour{
+	width: 10px;
+	height: 25%;
+	background-color: black;
+}
+
+#alien{
+	width: 300px;
+	height: 406px;
+	top: 5px;
+	left: 800px;
+	position: absolute;
+	animation-name: hello;
+	transform-origin: bottom;
+	animation-duration: 5s;
+	animation-delay: 10s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+@keyframes hello {
+	0% {top: 5px; left: 790px;}
+	50% {left: 700px; transform: rotate(-40deg);}
+	100% {top: 5px; left: 790px;}
+}
+
+.title{
+	margin-left: 50px;
+	color: white;
+}
+
+#monthDay{
+	font-size: 28px;
+}
+
+#sunContainer:hover {
+ 	transform: scale(1.2);
+ 	transition: 0.3s ease-in-out;
+}
+
+#moonContainer:hover {
+ 	transform: scale(1.2);
+ 	transition: 0.3s ease-in-out;
+}
